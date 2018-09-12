@@ -32,12 +32,17 @@ Example Session
   Eric, you are a fall baby of the stone age.
 """
 name = input("Hello, what is your name? ")
-month = input("Hi "+ name + "(, what was the name of the month you were born in? ")
+month = input("Hi "+ name + ", what was the name of the month you were born in? ")
+month = month.lower() #changes everything to lower case
 if month == "september" or "october" or "november":
     season = "fall"
 if month == "december" or "january" or "february":
     season = "winter"
-
+if month == "march" or "april" or "may":
+    season = "spring"
+if month == "june" or "july" or "august":
+    season = "summer"
+print(season)
 
 year = input("And what year were you born in, " + name + "? ")
 day = input("And the day? ")
