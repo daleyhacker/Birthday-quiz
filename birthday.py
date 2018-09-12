@@ -33,7 +33,10 @@ Example Session
 """
 name = input("Hello, what is your name? ")
 month = input("Hi "+ name + "(, what was the name of the month you were born in? ")
-if month == 
+if month == "september" or "october" or "november":
+    season = "fall"
+if month == "december" or "january" or "february":
+    season = "winter"
 
 
 year = input("And what year were you born in, " + name + "? ")
