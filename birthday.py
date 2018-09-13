@@ -31,6 +31,16 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+
+from datetime import datetime
+from calendar import month_name
+
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+monthname = month_name[todaymonth]
+monthname = monthname.lower()
+
+
 name = input("Hello, what is your name? ")
 
 month = input("Hi "+ name + ", what was the name of the month you were born in? ")
@@ -60,14 +70,15 @@ if year <= "1970":
     decade = "stone age"
 
     print(decade)
+
 day = input("And the day? ")
 
 if day == "31" and month == "october":
     birthday = "You were born on Halloween!"
     print(birthday)
 else:
-    if day == "12" and month == "september":
-        birthday = "Happy birthday!"
+    if day == todaydate and month == monthname:
+        birthday = "Happy birthday"
         print(birthday)
     else: 
         print(name + ", you are a " + season + " baby of the " + decade + ".")
