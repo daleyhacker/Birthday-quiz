@@ -66,7 +66,7 @@ if year == "1990" or year == "1991" or year == "1992" or year == "1993" or year 
     decade = "nineties"
 if year == "1980" or year == "1981" or year == "1982" or year == "1983" or year == "1984" or year == "1985" or year == "1986" or year == "1987" or year == "1988" or year == "1989":
     decade = "eighties"
-if year <= "1970":
+if year <= "1979":
     decade = "stone age"
 
     print(decade)
