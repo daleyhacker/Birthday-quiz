@@ -74,9 +74,9 @@ day = input("And the day? ")
 if day == "31" and month == "october":
     birthday = "You were born on Halloween!"
     print(birthday)
-
-if day == "12" and month == "september":
-    birthday = "Happy birthday!"
-    print(birthday)
-elif: 
-    print(name + ", you are a " + season + " baby of the " + decade + ".")
+else:
+    if day == "12" and month == "september":
+        birthday = "Happy birthday!"
+        print(birthday)
+    else: 
+        print(name + ", you are a " + season + " baby of the " + decade + ".")
