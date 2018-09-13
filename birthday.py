@@ -47,16 +47,16 @@ month = input("Hi "+ name + ", what was the name of the month you were born in? 
 month = month.lower()
 if month == "september" or month == "october" or month =="november":
     season = "fall"
-    print(season)
+    #print(season)
 elif month == "december" or month == "january" or month == "february":
     season = "winter"
-    print(season)
+    #print(season)
 elif month == "march" or month == "april" or month == "may":
     season = "spring"
-    print(season)
+    #print(season)
 elif month == "june" or month == "july" or month == "august":
     season = "summer"
-    print(season)
+    #print(season)
 
 
 year = input("And what year were you born in, " + name + "? ")
@@ -69,7 +69,7 @@ if year == "1980" or year == "1981" or year == "1982" or year == "1983" or year 
 if year <= "1979":
     decade = "stone age"
 
-    print(decade)
+    #print(decade)
 
 day = input("And the day? ")
 
