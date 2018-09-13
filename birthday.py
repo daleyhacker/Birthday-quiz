@@ -78,7 +78,7 @@ if day == "31" and month == "october":
         print(birthday)
 else:
     if day == str(todaydate) and month == str(monthname):
-        birthday = "Happy birthday"
+        birthday = "Happy birthday!"
         print(birthday)
 
     else:
