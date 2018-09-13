@@ -35,19 +35,20 @@ name = input("Hello, what is your name? ")
 
 month = float(input("Hi "+ name + ", what was the name of the month you were born in? "))
 month = month.lower() #changes everything to lower case
-if month == "september" or "october" or "november":
-    season = "fall"
-    print(season)
-elif month == "december" or "january" or "february":
-    season = "winter"
-    print(season)
-elif month == "march" or "april" or "may":
-    season = "spring"
-    print(season)
-elif month == "june" or "july" or "august":
-    season = "summer"
-    print(season)
-"""
+if month == "september" or if month == "october" or if month == "november":
+    print("fall")
+
+
+if month == "december" or month "january" or if month "february":
+    print("winter")
+
+if month == "march" or if month "april" or if month "may":
+    print("spring")
+
+else:
+    print("summer")
+
+
 year = input("And what year were you born in, " + name + "? ")
 if year == "2000" or "2001" or "2002" or "2003" or "2004" or "2005" or "2006" or "2007" or "2008" or "2009":
     decade = "2000s"
@@ -70,8 +71,6 @@ if year == "1920" or "1921" or "1922" or "1923" or "1924" or "1925" or "1926" or
     print(decade)
 day = input("And the day? ")
 
-
-"""
 
 
 
