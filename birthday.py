@@ -33,46 +33,50 @@ Example Session
 """
 name = input("Hello, what is your name? ")
 
-month = float(input("Hi "+ name + ", what was the name of the month you were born in? "))
-month = month.lower() #changes everything to lower case
-if month == "september" or if month == "october" or if month == "november":
-    print("fall")
-
-
-if month == "december" or month "january" or if month "february":
-    print("winter")
-
-if month == "march" or if month "april" or if month "may":
-    print("spring")
-
-else:
-    print("summer")
+month = input("Hi "+ name + ", what was the name of the month you were born in? ")
+month = month.lower()
+if month == "september" or month == "october" or month =="november":
+    season = "fall"
+    print(season)
+elif month == "december" or month == "january" or month == "february":
+    season = "winter"
+    print(season)
+elif month == "march" or month == "april" or month == "may":
+    season = "spring"
+    print(season)
+elif month == "june" or month == "july" or month == "august":
+    season = "summer"
+    print(season)
 
 
 year = input("And what year were you born in, " + name + "? ")
-if year == "2000" or "2001" or "2002" or "2003" or "2004" or "2005" or "2006" or "2007" or "2008" or "2009":
+if year == "2000" or year == "2001" or year == "2002" or year == "2003" or year == "2004" or year == "2005" or year == "2006" or year == "2007" or year == "2008" or year == "2009":
     decade = "2000s"
-if year == "1990" or "1991" or "1992" or "1993" or "1994" or "1995" or "1996" or "1997" or "1998" or "1999":
+if year == "1990" or year == "1991" or year == "1992" or year == "1993" or year == "1994" or year == "1995" or year == "1996" or year == "1997" or year == "1998" or year == "1999":
     decade = "1990s"
-if year == "1980" or "1981" or "1982" or "1983" or "1984" or "1985" or "1986" or "1987" or "1988" or "1989":
+if year == "1980" or year == "1981" or year == "1982" or year == "1983" or year == "1984" or year == "1985" or year == "1986" or year == "1987" or year == "1988" or year == "1989":
     decade = "1980s"
-if year == "1970" or "1971" or "1972" or "1973" or "1974" or "1975" or "1976" or "1977" or "1978" or "1979":
+if year == "1970" or year ==  "1971" or year == "1972" or year == "1973" or year == "1974" or year == "1975" or year == "1976" or year == "1977" or year == "1978" or year == "1979":
     decade = "1970s"
-if year == "1960" or "1961" or "1962" or "1963" or "1964" or "1965" or "1966" or "1967" or "1968" or "1969":
+if year == "1960" or year == "1961" or year == "1962" or year == "1963" or year == "1964" or year == "1965" or year == "1966" or year == "1967" or year == "1968" or year == "1969":
     decade = "1960s"
-if year == "1950" or "1951" or "1952" or "1953" or "1954" or "1955" or "1956" or "1957" or "1958" or "1959":
+if year == "1950" or year == "1951" or year == "1952" or year == "1953" or year == "1954" or year == "1955" or year == "1956" or year == "1957" or year == "1958" or year == "1959":
     decade = "1950s"
-if year == "1940" or "1941" or "1942" or "1943" or "1944" or "1945" or "1946" or "1947" or "1948" or "1949":
+if year == "1940" or year == "1941" or year == "1942" or year == "1943" or year == "1944" or year == "1945" or year == "1946" or year == "1947" or year == "1948" or year == "1949":
     decade ="1940s"
-if year == "1930" or "1931" or "1932" or "1933" or "1934" or "1935" or "1936" or "1937" or "1938" or "1939":
+if year == "1930" or year == "1931" or year == "1932" or year == "1933" or year == "1934" or year == "1935" or year == "1936" or year == "1937" or year == "1938" or year == "1939":
     decade = "1930s"
-if year == "1920" or "1921" or "1922" or "1923" or "1924" or "1925" or "1926" or "1927" or "1928" or "1929":
+if year == "1920" or year == "1921" or year == "1922" or year == "1923" or year == "1924" or year == "1925" or year == "1926" or year == "1927" or year == "1928" or year == "1929":
     decade = "1920s"
     print(decade)
 day = input("And the day? ")
 
+if day == "31" and month == "october":
+    birthday = "You were born on Halloween!"
+    print(birthday)
 
-
-
-
-
+if day == "12" and month == "september":
+    birthday = "Happy birthday!"
+    print(birthday)
+elif: 
+    print(name + ", you are a " + season + " baby of the " + decade + ".")
