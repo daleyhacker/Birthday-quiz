@@ -74,13 +74,14 @@ if year <= "1979":
 day = input("And the day? ")
 
 if day == "31" and month == "october":
-    birthday = "You were born on Halloween!"
-    print(birthday)
+        birthday = "You were born on Halloween!"
+        print(birthday)
 else:
-    if day == todaydate and month == monthname:
+    if day == str(todaydate) and month == str(monthname):
         birthday = "Happy birthday"
         print(birthday)
-    else: 
+
+    else:
         print(name + ", you are a " + season + " baby of the " + decade + ".")
 
 
